@@ -1,0 +1,100 @@
+# 构建和输出目录 Build and Output Directories
+# 编译生成的文件和目录 Compiled files and build outputs
+lib/                    # 库文件目录 Library files
+dist/                   # 分发目录 Distribution directory
+[Dd]ebug/              # 调试输出 Debug output
+[Rr]elease/            # 发布输出 Release output
+[Bb]in/                # 二进制文件 Binary files
+[Oo]bj/                # 目标文件 Object files
+[Oo]ut/                # 输出目录 Output directory
+x64/                   # 64位构建 64-bit builds
+x86/                   # 32位构建 32-bit builds
+[Ww][Ii][Nn]32/        # Win32平台 Win32 platform
+[Aa][Rr][Mm]/          # ARM平台 ARM platform
+[Aa][Rr][Mm]64/        # ARM64平台 ARM64 platform
+/cache/                # 缓存文件 Cache files
+/temp/                 # 临时文件 Temporary files
+/data/                 # 数据文件 Data files
+external/              # 外部依赖 External dependencies
+artifacts/             # 构建产物 Build artifacts
+publish/               # 发布目录 Publish directory
+Generated\ Files/      # 生成的文件 Generated files
+[Ll]og/               # 日志目录 Log directory
+[Ll]ogs/              # 日志文件 Log files
+BenchmarkDotNet.Artifacts/  # 性能测试结果 Benchmark results
+
+# 依赖管理 Dependencies Management
+# 包管理器和依赖相关文件 Package manager and dependency files
+node_modules/          # Node.js 依赖目录 Node.js dependencies
+.pnp.*                # Plug'n'Play 配置 Plug'n'Play config
+.yarn/*               # Yarn 缓存目录 Yarn cache directory
+!.yarn/patches        # 保留补丁 Keep patches
+!.yarn/plugins        # 保留插件 Keep plugins
+!.yarn/releases       # 保留发布 Keep releases
+!.yarn/sdks          # 保留 SDK Keep SDKs
+!.yarn/versions      # 保留版本 Keep versions
+package-lock.json     # NPM 锁文件 NPM lock file
+pnpm-lock.yaml       # PNPM 锁文件 PNPM lock file
+**/[Pp]ackages/*     # NuGet 包目录 NuGet packages
+!**/[Pp]ackages/build/ # 保留构建包 Keep build packages
+
+# 环境配置 Environment Configuration
+# 本地环境和配置文件 Local environment and config files
+.env.local            # 本地环境变量 Local environment variables
+tsconfig.tsbuildinfo  # TypeScript 构建信息 TypeScript build info
+
+# IDE和编辑器配置 IDE and Editor Configuration
+# 各类开发工具的配置文件和缓存 Development tools config and cache
+.vscode/             # VS Code 配置 VS Code configuration
+.vs/                 # Visual Studio 配置 Visual Studio configuration
+.idea/               # JetBrains IDE 配置 JetBrains IDE configuration
+*.suo                # Visual Studio 用户选项 VS User Options
+*.user               # 用户特定文件 User-specific files
+*.userosscache       # 用户选项缓存 User options cache
+*.sln.docstates      # 解决方案文档状态 Solution document states
+*.userprefs          # 用户偏好设置 User preferences
+.eslintcache         # ESLint 缓存 ESLint cache
+*.njsproj            # Node.js 项目文件 Node.js project files
+*.ntvs*              # Node Tools for VS Node Tools for VS
+.cr/personal         # CodeRush 个人设置 CodeRush personal settings
+_ReSharper*/         # ReSharper 缓存 ReSharper cache
+*.DotSettings.user   # ReSharper 设置 ReSharper settings
+*.VC.db             # Visual C++ 数据库 Visual C++ database
+*.VC.VC.opendb      # Visual C++ 数据库 Visual C++ database
+.mfractor/          # MFractor 配置 MFractor configuration
+.ionide/            # Ionide-vscode 配置 Ionide-vscode configuration
+
+# 临时文件和日志 Temporary Files and Logs
+# 临时生成的文件和日志记录 Generated temporary files and logs
+*.log                # 日志文件 Log files
+*.tmp                # 临时文件 Temporary files
+*~                   # 备份文件 Backup files
+*.cache              # 缓存文件 Cache files
+!?*.[Cc]ache/       # 保留特定缓存目录 Keep specific cache directories
+*.bak               # 备份文件 Backup files
+[Tt]emp/            # 临时目录 Temporary directory
+.sass-cache/        # Sass 缓存 Sass cache
+__pycache__/        # Python 缓存 Python cache
+*.pyc               # Python 编译文件 Python compiled files
+
+# 操作系统特定文件 OS Specific Files
+# 各操作系统自动生成的文件 OS generated files
+.DS_Store           # macOS 文件 macOS files
+Thumbs.db           # Windows 缩略图 Windows thumbnail cache
+Desktop.ini         # Windows 配置文件 Windows configuration file
+$RECYCLE.BIN/       # Windows 回收站 Windows Recycle Bin
+*.lnk               # Windows 快捷方式 Windows shortcuts
+
+# 测试和覆盖率 Tests and Coverage
+# 测试结果和代码覆盖率报告 Test results and coverage reports
+coverage*/           # 覆盖率报告目录 Coverage report directory
+*.coverage          # 覆盖率文件 Coverage file
+*.coveragexml       # 覆盖率 XML Coverage XML
+TestResult.xml      # 测试结果 Test results
+*.VisualState.xml   # 测试状态 Test state
+[Tt]est[Rr]esult*/  # 测试结果目录 Test result directory
+[Bb]uild[Ll]og.*    # 构建日志 Build logs
+
+# 项目特定文件 Project Specific
+# 当前项目特有的忽略规则 Project-specific ignore rules
+opj/                # 项目特定目录 Project specific directory
